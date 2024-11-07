@@ -1,0 +1,14 @@
+spring:
+  application:
+  name: polyclinic
+doc:
+  specialization:
+    dentist: Cтоматолог
+    surgeon: Хирург
+    therapist: Терапевт
+  price:
+    dentist: 1500
+    therapist: 500
+    junior-surgeon: 700
+    senior-surgeon: 2000
+
