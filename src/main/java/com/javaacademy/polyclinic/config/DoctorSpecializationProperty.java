@@ -8,7 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Data
 @AllArgsConstructor
 public class DoctorSpecializationProperty {
-    private String dentist;
-    private String surgeon;
-    private String therapist;
+    private String doc1;
+    private String doc2;
+    private String doc3;
 }

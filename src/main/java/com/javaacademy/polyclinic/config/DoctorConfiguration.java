@@ -19,25 +19,25 @@ public class DoctorConfiguration {
 
     @Bean
     public Doctor dentist() {
-        return new Doctor(doctorSpecializationProperty.getDentist(),
+        return new Doctor(doctorSpecializationProperty.getDoc1(),
                 valueOf(Long.parseLong(doctorPriceProperty.getDentist())));
     }
 
     @Bean
     public Doctor therapist() {
-        return new Doctor(doctorSpecializationProperty.getTherapist(),
+        return new Doctor(doctorSpecializationProperty.getDoc3(),
                 new BigDecimal(doctorPriceProperty.getTherapist()));
     }
 
     @Bean
     public Doctor juniorSurgeon() {
-        return new Doctor(doctorSpecializationProperty.getSurgeon(),
+        return new Doctor(doctorSpecializationProperty.getDoc2(),
                 new BigDecimal(doctorPriceProperty.getJuniorSurgeon()));
     }
 
     @Bean
     public Doctor seniorSurgeon() {
-        return new Doctor(doctorSpecializationProperty.getSurgeon(),
+        return new Doctor(doctorSpecializationProperty.getDoc2(),
                 new BigDecimal(doctorPriceProperty.getSeniorSurgeon()));
     }
 }
