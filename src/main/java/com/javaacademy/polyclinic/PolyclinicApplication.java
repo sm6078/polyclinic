@@ -11,10 +11,17 @@ public class PolyclinicApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(PolyclinicApplication.class, args);
         Polyclinic polyclinic = context.getBean(Polyclinic.class);
+        /*
         polyclinic.treatDentist();
         polyclinic.treatTherapist();
         polyclinic.treatJuniorSurgeon();
         polyclinic.treatSeniorSurgeon();
+         */
+        //polyclinic.treatAllDoctors();
+        polyclinic.threatDentist();
+        polyclinic.threatTherapist();
+        polyclinic.threatJuniorSurgeon();
+        polyclinic.threatSeniorSurgeon();
         BoxOffice boxOffice = context.getBean(BoxOffice.class);
         boxOffice.printIncome();
         context.close();

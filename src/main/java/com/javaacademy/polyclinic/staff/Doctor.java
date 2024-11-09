@@ -10,11 +10,11 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Slf4j
 public class Doctor {
-    private String specialization;
+    private SpecializationEnum specializationEnum;
     public BigDecimal price;
 
     public BigDecimal treat() {
-        log.info("Врач со специализацие {} вылечил человека", specialization);
+        log.info("Врач со специализацие {} вылечил человека", specializationEnum.getRussianSpecialization());
         return price;
     }
 }
