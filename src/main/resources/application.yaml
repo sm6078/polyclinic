@@ -2,10 +2,6 @@ spring:
   application:
   name: polyclinic
 doc:
-  specialization:
-    doc1: Cтоматолог
-    doc2: Хирург
-    doc3: Терапевт
   price:
     dentist: 1500
     therapist: 500
